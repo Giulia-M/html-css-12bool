@@ -3,30 +3,28 @@
     height: 100px;
 }
 
-.row > .col-6 .row > .col-2.speciale::after{
+/*.row > .col-6 .row > .col-2.speciale::after{
     background-color: #f07f81;
-}
+    padding: 10px 10px;
+}*/
 
-   /* background-color: #f07f81;
+/* background-color: #f07f81;
    background-color: #ffc0cb; */
 
 [class*="col-"] {
     position: relative;
     text-align: center;
-    background-color: #ffc0cb;
- }
- [class*="speciale"]::after {
-     position: absolute;
-     top: 1px;
-     bottom: 1px;
-     left: 1px;
-     right: 1px;
-     content: "Nested 2 col";
-     
-
  }
  
-  .speciale  {
-      
-      border: 1px solid white;
-  }
+.row [class*="col-"] .row [class*="col-"] {
+    background-color: #f07f81;;
+    height: 85px;
+    border: 1px solid white;
+}
+
+.container {
+    background-color: #ffc0cb;
+}
+.padding {
+    padding: 5px;
+}
