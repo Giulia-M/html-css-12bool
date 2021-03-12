@@ -1,20 +1,32 @@
-.container {
-}
 [class*="col-"] {
-   /* position: relative; */
-   border: 1px solid;
-   text-align: center;
+    border: 1px solid;
+    height: 100px;
+}
 
+.row > .col-6 .row > .col-2.speciale::after{
+    background-color: #f07f81;
 }
-/* [class*="col-"]::after {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    content: "";
+
+   /* background-color: #f07f81;
+   background-color: #ffc0cb; */
+
+[class*="col-"] {
+    position: relative;
+    text-align: center;
     background-color: #ffc0cb;
-} */
-.col-1, .col-12, .col-2, .col-8, .col-6{
-    padding: 90px 0;
-}
+ }
+ [class*="speciale"]::after {
+     position: absolute;
+     top: 1px;
+     bottom: 1px;
+     left: 1px;
+     right: 1px;
+     content: "Nested 2 col";
+     
+
+ }
+ 
+  .speciale  {
+      
+      border: 1px solid white;
+  }
