@@ -5,6 +5,7 @@
 [class*="col-"] {
     position: relative;
     text-align: center;
+    background-color: #ffc0cb;
  }
  
 .row [class*="col-"] .row [class*="col-"] {
@@ -14,9 +15,6 @@
     
 }
 
-.container {
-    background-color: #ffc0cb;
-}
 .padding {
     padding: 5px;
 }
